@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderSearchController {
 	@Autowired
 	OrderService orderService; // DI
+	
+	/**
+	 * method to search for all orders
+	 * @return
+	 */
 
 	@GetMapping("/order")
 	List<Order> getOrders() {
