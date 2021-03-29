@@ -16,7 +16,7 @@ public class OrderService {
 
 	}
 
-	public Optional<Order> getOrder(String id) {
+	public Optional<Order> getOrderById(String id) {
 		return orderRepository.findById(id);
 	}
 
